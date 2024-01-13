@@ -104,8 +104,8 @@ a{
 
 /* Biografia */
 .biography-container {
-    padding: 25px 0;
-    margin: 25px 0;
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
 
@@ -139,6 +139,19 @@ a{
 .interesting-facts-container {
     padding: 25px 0;
     margin: 25px 0;
+}
+
+.interesting-facts-container ul {
+  list-style: none;
+}
+
+.interesting-facts-container ul li::before {
+  content: "\2022";
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 .interesting-facts-container li {
