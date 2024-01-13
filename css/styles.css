@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medieval Sharp";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/MedievalSharp-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: rgba(255, 217, 0, 0.95);
+  --secondary-color: rgba(71, 212, 200, 0.95);
+  --out-color: #a0a0a0;
+  --background: rgba(0, 43, 78, 0.85);
+  --bold: rgba(0, 195, 255, 0.95);
+  --font: #FFF;
+  --border:rgba(63, 63, 63, 0.5);
+  --captions: rgba(180, 180, 180, 0.61);
+  --author: rgba(255, 217, 0, 1);
+}
+
+html {
+  font-family: "Medieval Sharp";
+  font-size: 19px;
+  color: var(--font);
+}
+
+body {
+  background: url("../img/lich-king-vs-fordring.png") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+  max-width: 1100px;
+  background-color: var(--background);
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 50px;
+  border-radius: 45px;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--bold);
+}
+
+figcaption{
+    color: var(--captions);
+}
+
+img {
+  width: 100%;
+  border-radius: 30px;
+  border: 10px solid var(--border);
+}
+
+h2,h3 {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom:  0px;
+}
+
+.main-paragraph {
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+a{
+    color:aquamarine;
+}
+
+/* Imagem em destaque */
+.featured-image {
+  text-align: center;
+  max-width: 900px;
+  border-radius: 45px;
+  margin: 20px auto;
+}
+
+/* Biografia */
+.biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+}
+
+
+/* Citações */
+
+.quotes-container{
+    background: url("../img/arthas-2.jpg") no-repeat center center
+    fixed;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.quotes-container blockquote{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.quotes-container p {
+    font-style: italic;
+}
+
+.author{
+    color: var(--author);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*Curiosidades*/
+
+.interesting-facts-container {
+    padding: 25px 0;
+    margin: 25px 0;
+}
+
+.interesting-facts-container li {
+    height: 30px;
+}
